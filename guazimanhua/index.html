@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>瓜子漫画免费入口-免费漫画入口_瓜子漫画在线阅读</title>
+<meta name="description" content="瓜子漫画免费入口提供漫画在线阅读指引，整理免费入口的使用方式、常见问题与阅读建议，帮助读者快速找到瓜子漫画免费入口并顺畅开始阅读。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1a2e'/%3E%3Cpath d='M18 16h22a6 6 0 0 1 6 6v26H24a6 6 0 0 1-6-6z' fill='%23ffb703'/%3E%3Cpath d='M24 24h16M24 32h16M24 40h10' stroke='%231a1a2e' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#1a1a2e;
+    --ink-soft:#41415c;
+    --paper:#fbf7ef;
+    --paper-2:#ffffff;
+    --sun:#ffb703;
+    --sun-deep:#f08c00;
+    --leaf:#3f7d5a;
+    --line:#e6ddcc;
+    --radius:16px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,-apple-system,sans-serif;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  .wrap{width:min(1120px,92vw);margin:0 auto;}
+
+  /* 页头 */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(251,247,239,.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .head-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 0;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:.3px;}
+  .logo svg{flex:none;}
+  .logo .brand-text{white-space:nowrap;}
+  nav.main{display:flex;gap:22px;font-size:15px;font-weight:600;color:var(--ink-soft);}
+  nav.main a{padding:4px 0;border-bottom:2px solid transparent;transition:.2s;}
+  nav.main a:hover{border-color:var(--sun);color:var(--ink);}
+  .head-cta{
+    background:var(--ink);color:#fff;font-size:14px;font-weight:700;
+    padding:9px 18px;border-radius:999px;white-space:nowrap;transition:.2s;
+  }
+  .head-cta:hover{background:var(--sun-deep);}
+
+  /* 首屏 */
+  .hero{padding:56px 0 40px;position:relative;overflow:hidden;}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    background:#fff3d1;color:#8a5b00;font-size:13px;font-weight:700;
+    padding:5px 14px;border-radius:999px;margin-bottom:18px;
+  }
+  .eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--sun-deep);}
+  h1{font-size:clamp(28px,4.4vw,44px);line-height:1.25;margin:0 0 18px;letter-spacing:-.5px;font-weight:900;}
+  h1 .hl{background:linear-gradient(transparent 62%,#ffd98a 62%);padding:0 2px;}
+  .hero p.lead{font-size:16.5px;color:var(--ink-soft);margin:0 0 26px;max-width:34em;}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center;}
+  .btn-primary{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--sun);color:var(--ink);font-weight:800;font-size:16px;
+    padding:13px 28px;border-radius:999px;box-shadow:0 6px 0 #d99b00;transition:.15s;
+  }
+  .btn-primary:hover{transform:translateY(2px);box-shadow:0 4px 0 #d99b00;}
+  .btn-ghost{
+    display:inline-flex;align-items:center;gap:8px;
+    border:2px solid var(--ink);color:var(--ink);font-weight:700;font-size:15px;
+    padding:11px 24px;border-radius:999px;transition:.2s;
+  }
+  .btn-ghost:hover{background:var(--ink);color:#fff;}
+  .hero-note{font-size:13px;color:#8b8677;margin-top:16px;}
+
+  .hero-art{
+    background:var(--ink);border-radius:24px;padding:22px;
+    box-shadow:0 18px 40px -18px rgba(26,26,46,.55);
+    position:relative;
+  }
+  .hero-art svg{display:block;width:100%;height:auto;border-radius:12px;}
+  .art-caption{
+    margin-top:14px;color:#e9e5dc;font-size:13px;display:flex;justify-content:space-between;gap:10px;
+  }
+  .art-caption b{color:var(--sun);}
+
+  /* 通用区块 */
+  section{padding:44px 0;}
+  .sec-head{margin-bottom:26px;max-width:44em;}
+  .sec-kicker{font-size:13px;font-weight:800;letter-spacing:2px;color:var(--sun-deep);text-transform:uppercase;}
+  h2{font-size:clamp(22px,2.8vw,30px);margin:6px 0 10px;font-weight:900;letter-spacing:-.3px;}
+  .sec-head p{margin:0;color:var(--ink-soft);font-size:15.5px;}
+
+  /* 入口卡片 */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .card{
+    background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px 22px;display:flex;flex-direction:column;gap:10px;
+    transition:.2s;
+  }
+  .card:hover{transform:translateY(-4px);box-shadow:0 14px 30px -18px rgba(26,26,46,.35);border-color:#d8c9a6;}
+  .card .icon{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:#fff3d1;}
+  .card h3{margin:0;font-size:17.5px;font-weight:800;}
+  .card p{margin:0;font-size:14.5px;color:var(--ink-soft);}
+  .card .tag{font-size:12.5px;font-weight:700;color:var(--leaf);}
+
+  /* 阅读说明 */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start;}
+  .prose p{margin:0 0 14px;font-size:15.5px;color:#33334a;}
+  .steps{list-style:none;margin:0;padding:0;display:grid;gap:14px;}
+  .steps li{
+    display:grid;grid-template-columns:36px 1fr;gap:14px;align-items:start;
+    background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:16px 18px;
+  }
+  .steps .num{
+    width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--sun);
+    display:grid;place-items:center;font-weight:900;font-size:15px;
+  }
+  .steps h4{margin:0 0 4px;font-size:15.5px;font-weight:800;}
+  .steps p{margin:0;font-size:14px;color:var(--ink-soft);}
+
+  /* 作品展示 */
+  .shelf{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+  .book{
+    background:var(--paper-2);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+    display:flex;flex-direction:column;transition:.2s;
+  }
+  .book:hover{transform:translateY(-3px);box-shadow:0 12px 26px -18px rgba(26,26,46,.4);}
+  .book .cover{aspect-ratio:3/4;position:relative;}
+  .book .cover svg{width:100%;height:100%;display:block;}
+  .book .meta{padding:12px 14px 16px;}
+  .book h4{margin:0 0 4px;font-size:15px;font-weight:800;}
+  .book span{font-size:12.5px;color:#8b8677;}
+
+  /* 问答 */
+  .faq{display:grid;gap:12px;}
+  details{
+    background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:0 20px;
+  }
+  details[open]{border-color:#e0c98a;background:#fffdf7;}
+  summary{
+    cursor:pointer;list-style:none;padding:16px 0;font-weight:800;font-size:15.5px;
+    display:flex;justify-content:space-between;gap:12px;align-items:center;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::after{content:"+";font-size:20px;color:var(--sun-deep);font-weight:700;line-height:1;}
+  details[open] summary::after{content:"–";}
+  details p{margin:0 0 16px;font-size:14.5px;color:var(--ink-soft);}
+
+  /* 下载区块 */
+  .download-band{
+    background:var(--ink);color:#f3efe6;border-radius:22px;padding:36px 34px;
+    display:grid;grid-template-columns:1fr auto;gap:26px;align-items:center;
+  }
+  .download-band h2{color:#fff;margin-top:0;}
+  .download-band p{margin:0;color:#c9c4b8;font-size:15px;max-width:40em;}
+  .dl-btn{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--sun);color:var(--ink);font-weight:800;font-size:16px;
+    padding:13px 30px;border-radius:999px;pointer-events:none;
+  }
+  .dl-hint{font-size:12.5px;color:#a8a396;margin-top:8px;text-align:center;}
+
+  /* 页尾 */
+  footer.site{
+    border-top:1px solid var(--line);margin-top:26px;padding:34px 0 40px;background:#f6f0e4;
+  }
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;}
+  .foot-brand{font-weight:900;font-size:16px;display:flex;align-items:center;gap:9px;margin-bottom:10px;}
+  .foot-grid p{margin:0;font-size:13.5px;color:#6e6a5d;max-width:30em;}
+  .foot-grid h5{margin:0 0 10px;font-size:14px;font-weight:800;}
+  .foot-grid ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:13.5px;color:#6e6a5d;}
+  .foot-grid ul a:hover{color:var(--sun-deep);}
+  .copyright{
+    margin-top:26px;padding-top:18px;border-top:1px solid var(--line);
+    font-size:12.5px;color:#8b8677;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  }
+
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:30px;}
+    .hero-art{order:-1;}
+    .cards{grid-template-columns:1fr 1fr;}
+    .split{grid-template-columns:1fr;}
+    .shelf{grid-template-columns:1fr 1fr;}
+    .download-band{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+    nav.main{display:none;}
+  }
+  @media (max-width:560px){
+    .hero{padding:30px 0 22px;}
+    .cards{grid-template-columns:1fr;}
+    .shelf{grid-template-columns:1fr 1fr;}
+    .foot-grid{grid-template-columns:1fr;}
+    .head-inner{padding:10px 0;}
+    .logo{font-size:15.5px;}
+    .head-cta{padding:8px 14px;font-size:13px;}
+    .download-band{padding:26px 22px;}
+    section{padding:32px 0;}
+  }
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap head-inner">
+    <a class="logo" href="#top" aria-label="瓜子漫画免费入口 首页">
+      <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#1a1a2e"/>
+        <path d="M18 16h22a6 6 0 0 1 6 6v26H24a6 6 0 0 1-6-6z" fill="#ffb703"/>
+        <path d="M24 24h16M24 32h16M24 40h10" stroke="#1a1a2e" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">瓜子漫画免费入口</span>
+    </a>
+    <nav class="main" aria-label="主导航">
+      <a href="#entry">入口导航</a>
+      <a href="#howto">阅读方式</a>
+      <a href="#shelf">热门分区</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <a class="head-cta" href="#entry">立即进入</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">免费漫画 · 在线阅读</span>
+        <h1><span class="hl">瓜子漫画免费入口</span></h1>
+        <p class="lead">这里是瓜子漫画免费入口的主题首页。页面把入口位置、阅读前的准备、免费阅读的常见疑问集中在一起，让你打开页面就能判断下一步该点哪里，不必在多个链接之间反复试探。</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#entry">进入免费入口
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="#1a1a2e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn-ghost" href="#howto">先看阅读方式</a>
+        </div>
+        <p class="hero-note">入口状态以实际打开后的页面为准，本页负责引导与说明。</p>
+      </div>
+      <div class="hero-art">
+        <svg viewBox="0 0 420 300" role="img" aria-label="漫画书架与阅读界面示意插画">
+          <rect width="420" height="300" rx="12" fill="#22223b"/>
+          <rect x="26" y="30" width="240" height="150" rx="8" fill="#ffb703"/>
+          <rect x="26" y="30" width="240" height="150" rx="8" fill="none" stroke="#1a1a2e" stroke-width="4"/>
+          <path d="M46 62h120M46 86h180M46 110h150M46 134h100" stroke="#1a1a2e" stroke-width="7" stroke-linecap="round" opacity=".82"/>
+          <rect x="300" y="30" width="94" height="150" rx="8" fill="#3f7d5a"/>
+          <circle cx="347" cy="82" r="24" fill="#fbf7ef" opacity=".9"/>
+          <path d="M322 132h50M330 152h34" stroke="#fbf7ef" stroke-width="6" stroke-linecap="round" opacity=".8"/>
+          <rect x="26" y="200" width="368" height="12" rx="6" fill="#fbf7ef" opacity=".18"/>
+          <rect x="26" y="228" width="110" height="42" rx="8" fill="#fbf7ef" opacity=".14"/>
+          <rect x="150" y="228" width="110" height="42" rx="8" fill="#fbf7ef" opacity=".14"/>
+          <rect x="274" y="228" width="120" height="42" rx="8" fill="#ffb703" opacity=".85"/>
+          <text x="292" y="255" fill="#1a1a2e" font-size="17" font-weight="700" font-family="sans-serif">阅读中</text>
+        </svg>
+        <div class="art-caption"><span>书架分区示意</span><b>免费阅读</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 入口导航 -->
+  <section id="entry">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-kicker">入口导航</span>
+        <h2>瓜子漫画免费入口的三类常用路径</h2>
+        <p>不同读者打开瓜子漫画免费入口的目的并不相同：有人只想接着看上次的进度，有人想先找一部新作品，也有人更关心免费范围和加载速度。下面按使用场景拆分入口。</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5h13a3 3 0 0 1 3 3v11H7a3 3 0 0 1-3-3z" stroke="#f08c00" stroke-width="2" stroke-linejoin="round"/><path d="M8 9h8M8 13h5" stroke="#f08c00" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>继续阅读入口</h3>
+          <p>适合已经关注过作品、想回到书架继续追更的读者。打开入口后先确认书架上是否有历史记录，再决定是否重新搜索。</p>
+          <span class="tag">适合老读者</span>
+        </article>
+        <article class="card">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="#f08c00" stroke-width="2"/><path d="m16 16 4 4" stroke="#f08c00" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>作品搜索入口</h3>
+          <p>适合带着具体书名或题材来的读者。用关键词搜索比逐层翻分类更快，搜索词越接近作品原名，结果越集中。</p>
+          <span class="tag">适合找新作</span>
+        </article>
+        <article class="card">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5" stroke="#f08c00" stroke-width="2"/><rect x="13" y="4" width="7" height="7" rx="1.5" stroke="#f08c00" stroke-width="2"/><rect x="4" y="13" width="7" height="7" rx="1.5" stroke="#f08c00" stroke-width="2"/><rect x="13" y="13" width="7" height="7" rx="1.5" stroke="#f08c00" stroke-width="2"/></svg>
+          </div>
+          <h3>分类浏览入口</h3>
+          <p>适合没有明确目标、只想随手翻翻的读者。分类页通常按题材与更新节奏排列，可以先看更新栏再进分类。</p>
+          <span class="tag">适合泛浏览</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 阅读方式 -->
+  <section id="howto">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-kicker">阅读方式</span>
+        <h2>第一次使用瓜子漫画免费入口，可以按这个顺序</h2>
+        <p>把操作拆成四步，减少在入口页来回跳转的次数。每一步都对应一个具体动作，做完再进入下一步即可。</p>
+      </div>
+      <div class="split">
+        <div class="prose">
+          <p>瓜子漫画免费入口本身承担的是“把人送到正确页面”的作用，真正的内容仍在漫画站点内部。因此第一步不必急着点开作品，先确认当前网络是否稳定，再决定用手机还是电脑阅读。</p>
+          <p>第二步是确认账号与记录。如果之前登录过，书架通常会保留最近阅读位置；如果没有记录，从搜索框输入作品名重新找到即可。免费章节的开放范围会随作品和活动调整，页面标注比记忆更可靠。</p>
+          <p>第三步才是选择阅读模式。条漫适合竖向连续滑动，页漫适合逐页翻看，两者在手机上的操作习惯差别较大，选错模式会明显影响阅读节奏。第四步是收藏与追更，把常看的作品加入书架，下次从瓜子漫画免费入口进来时可以直接续读。</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="num">1</span>
+            <div><h4>确认网络与设备</h4><p>移动网络下建议先看页面加载是否顺畅，再决定是否继续深入浏览。</p></div>
+          </li>
+          <li>
+            <span class="num">2</span>
+            <div><h4>登录并查看书架</h4><p>有记录直接续读，没有记录用搜索定位作品，避免重复翻找。</p></div>
+          </li>
+          <li>
+            <span class="num">3</span>
+            <div><h4>选择条漫或页漫</h4><p>按作品版式切换阅读模式，竖向滑动与逐页翻看的体验差别明显。</p></div>
+          </li>
+          <li>
+            <span class="num">4</span>
+            <div><h4>收藏并开启追更</h4><p>把常看作品加入书架，下次从瓜子漫画免费入口进入即可继续。</p></div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门分区 -->
+  <section id="shelf">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-kicker">热门分区</span>
+        <h2>进入瓜子漫画免费入口后，常见的题材分区</h2>
+        <p>分区名称在不同站点版本中可能略有差异，下面按阅读体验归类，方便你在分类页快速定位。</p>
+      </div>
+      <div class="shelf">
+        <article class="book">
+          <div class="cover">
+            <svg viewBox="0 0 120 160" role="img" aria-label="都市题材封面示意">
+              <rect width="120" height="160" fill="#2b2d42"/>
+              <rect x="16" y="20" width="88" height="60" rx="4" fill="#ffb703"/>
+              <path d="M26 96h68M26 112h48M26 128h58" stroke="#fbf7ef" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+            </svg>
+          </div>
+          <div class="meta"><h4>都市日常</h4><span>节奏轻快 · 单话较短</span></div>
+        </article>
+        <article class="book">
+          <div class="cover">
+            <svg viewBox="0 0 120 160" role="img" aria-label="奇幻题材封面示意">
+              <rect width="120" height="160" fill="#3f7d5a"/>
+              <circle cx="60" cy="60" r="30" fill="#fbf7ef" opacity=".85"/>
+              <path d="M26 108h68M26 124h50" stroke="#fbf7ef" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+            </svg>
+          </div>
+          <div class="meta"><h4>奇幻冒险</h4><span>世界观完整 · 长线连载</span></div>
+        </article>
+        <article class="book">
+          <div class="cover">
+            <svg viewBox="0 0 120 160" role="img" aria-label="校园题材封面示意">
+              <rect width="120" height="160" fill="#e76f51"/>
+              <rect x="20" y="24" width="80" height="52" rx="4" fill="#fbf7ef" opacity=".9"/>
+              <path d="M26 96h68M26 112h40" stroke="#fbf7ef" stroke-width="4" stroke-linecap="round" opacity=".75"/>
+            </svg>
+          </div>
+          <div class="meta"><h4>校园青春</h4><span>情感线清晰 · 适合碎片时间</span></div>
+        </article>
+        <article class="book">
+          <div class="cover">
+            <svg viewBox="0 0 120 160" role="img" aria-label="悬疑题材封面示意">
+              <rect width="120" height="160" fill="#1a1a2e"/>
+              <path d="M40 34h40v52a20 20 0 0 1-40 0z" fill="#ffb703"/>
+              <path d="M26 104h68M26 120h54" stroke="#fbf7ef" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+            </svg>
+          </div>
+          <div class="meta"><h4>悬疑推理</h4><span>线索密集 · 建议连续阅读</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 常见问题 -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-kicker">常见问题</span>
+        <h2>关于瓜子漫画免费入口，读者问得最多的几件事</h2>
+        <p>以下回答只描述通用的使用逻辑，具体开放范围与页面形态以你实际打开时看到的为准。</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>瓜子漫画免费入口进去后，全部作品都能免费看吗？</summary>
+          <p>不一定。免费范围通常按作品、章节和活动分别设定，部分作品会先开放前面若干话，后续章节需要按站点规则处理。判断方法很简单：在作品详情页看章节列表上的标注，标为免费的可直接阅读，未标注的先确认再决定。</p>
+        </details>
+        <details>
+          <summary>为什么有时从瓜子漫画免费入口进入后加载很慢？</summary>
+          <p>常见原因是网络波动或页面资源较多。可以先切换网络环境，再清理一次浏览器缓存后重试。如果只有某一部作品加载慢，更可能是该作品图片体积较大，与入口本身关系不大。</p>
+        </details>
+        <details>
+          <summary>换设备后阅读记录还在吗？</summary>
+          <p>如果两次访问使用的是同一个账号，书架与阅读进度通常可以同步；未登录状态下产生的记录一般只保存在当前设备，换手机后需要重新搜索作品。建议在常用设备上保持登录状态。</p>
+        </details>
+        <details>
+          <summary>用手机打开瓜子漫画免费入口，需要注意什么？</summary>
+          <p>手机端建议横竖屏都试一次，条漫在竖屏下更连贯，页漫在横屏下更接近纸质阅读感。另外注意控制连续阅读时长，长时间近距离看小屏幕容易疲劳，中途适当休息更舒服。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 下载 -->
+  <section id="download">
+    <div class="wrap">
+      <div class="download-band">
+        <div>
+          <h2>把瓜子漫画免费入口放到桌面</h2>
+          <p>桌面快捷方式适合每天固定追更的读者，打开一步直达，省去重复输入网址。下载文件将在后续版本提供，当前按钮暂不可用。</p>
+        </div>
+        <div>
+          <a class="dl-btn" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14" stroke="#1a1a2e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            下载
+          </a>
+          <p class="dl-hint">暂未开放下载</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#1a1a2e"/>
+            <path d="M18 16h22a6 6 0 0 1 6 6v26H24a6 6 0 0 1-6-6z" fill="#ffb703"/>
+            <path d="M24 24h16M24 32h16M24 40h10" stroke="#1a1a2e" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+          瓜子漫画免费入口
+        </div>
+        <p>瓜子漫画免费入口主题首页，围绕入口位置、阅读方式与免费范围做集中说明，帮助读者少走弯路，直接进入阅读。</p>
+      </div>
+      <div>
+        <h5>页面导航</h5>
+        <ul>
+          <li><a href="#entry">入口导航</a></li>
+          <li><a href="#howto">阅读方式</a></li>
+          <li><a href="#shelf">热门分区</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>阅读提示</h5>
+        <ul>
+          <li>合理控制连续阅读时长</li>
+          <li>免费范围以页面标注为准</li>
+          <li>账号登录便于同步进度</li>
+          <li>遇到加载异常先换网络</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>© 2024 瓜子漫画免费入口 · 页面内容仅作入口引导与阅读说明</span>
+      <span>请以实际打开页面的信息为准</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
